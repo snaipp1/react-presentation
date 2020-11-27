@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/main.css">	
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					 <img src="images/1280px-React-icon.svg.png" alt="ReactJs" style="width: 150px;" class="logo-react">
+					<h3 style="color: #61dafb;">React JS</h3>
+					<span style="font-size: 20px; color: #61dafb;">first acquaintance with technology</span>
+				</section>
+				<section>
+					<h3 style="color: #61dafb;">What is React JS</h3>
+					<div class="two_divs_ul">
+						<section data-auto-animate class="list_react">
+							<h3 style="font-size: 40px; color: #61dafb;">Let's talk about:</h3>
+							<ul>
+								<li class="fragment" data-fragment-index="1" style="font-size: 25px; color: #ffffff;">Why is this library so popular</li>
+								<li class="fragment" data-fragment-index="2" style="font-size: 25px; color: #ffffff;">Is it worth studying it today</li>
+								<li class="fragment" data-fragment-index="3" style="font-size: 25px; color: #ffffff;">What are the prospects for React JS</li>
+							</ul>
+						</section>
+						<div class="first">
+							<img src="images/4Q1.gif" alt="ReactJs" style="width: 550px;" >
+						</div>
+					</div>
+				</section>
+				<section>
+					<section>
+						<h3 style="color: #61dafb;">Short historical background</h3>
+						<div class="r-stack">
+							<img data-fragment-index="0" src="images/Porting-a-JS-Library-to-a-React-Component.png" width="550" height="300" class="fragment current-visible">
+							<img data-fragment-index="1" src="images/maxresdefault.jpg" width="550" height="300" class="fragment current-visible">
+							<img data-fragment-index="2" src="images/freeReact.jpg" width="550" height="300" class="fragment current-visible">
+						</div>
+					</section>
+					<section>
+						<h3 style="color: #61dafb;">Known projects on React</h3>
+						<div class="company_react">
+							<img src="images/f.png" alt="facebook"  width="250" height="auto">
+							<img src="images/925757921s.png" alt="facebook"  width="250" height="auto">
+							<img src="images/69662-instagram-media-brand-social-logo-photography.png" alt="facebook"  width="250" height="auto">
+							<img src="images/netflix-logo-transparent-background-2208_684.png" alt="facebook"  width="250" height="auto">
+							<img src="images/Dropbox_logo_2017.png" alt="facebook"  width="250" height="auto">
+							<img src="images/yahoo.png" alt="facebook"  width="250" height="auto">
+						</div>
+					</section>
+				</section>
+				</section>
+				<section>
+					<h3 style="color: #61dafb;">Which allows React</h3>
+					<div class="two_divs">
+						<img src="images/1280px-React-icon.svg.png" alt="react logo" width="180px" class="fragment" data-fragment-index="1">
+						<p class="fragment" data-fragment-index="2" style="font-size: 25px;">With React, developers create web applications that change the display without restarting the page. Because of this, applications react quickly to user actions, such as filling out forms, applying filters, adding goods to the cart, and so on.</p>
+					</div>
+				</section>
+				<section>
+					<section>
+						<h3 style="color: #61dafb;">Key features of React</h3>
+					<ul>
+						<li class="fragment" data-fragment-index="1" style="font-size: 25px; color: #ffffff;">Universality</li>
+						<li class="fragment" data-fragment-index="2" style="font-size: 25px; color: #ffffff;">Declarativity</li>
+						<li class="fragment" data-fragment-index="3" style="font-size: 25px; color: #ffffff;">Component approach</li>
+						<li class="fragment" data-fragment-index="4" style="font-size: 25px; color: #ffffff;">JSX</li>
+						<li class="fragment" data-fragment-index="5" style="font-size: 25px; color: #ffffff;">Virtual DOM</li>
+					</ul>
+					</section>
+					<section>
+						<h3 style="color: #61dafb;">Universality</h3>
+						<p style="font-size: 25px; color: #ffffff;">Universality: In this case, we are talking about the fact that React is not limited to the user interfaces (UI) of web applications, but allows you to work on mobile platforms using React Native. This is the principle "Learn once, write anywhere."</p>	
+					</section>
+					<section>
+						<h3 style="color: #61dafb;">Declarativity</h3>
+						<p style="font-size: 25px; color: #ffffff;">Another important feature of the library is declarativity. Using React, the developer describes how the interface components look in different states. The declarative approach reduces the code and makes it understandable.</p>
+						<div class="two_divs">
+							<div style="max-width: 40%; height: auto;">
+								<h5 style="color: #61dafb; font-size: 20px;">Imperative:</h5>
+								<pre style="font-size: 12px;">
+									<code data-trim data-noescape>
+										<script type="text/template">
+										$("#btn").click(function() {
+											$(this).toggleClass("highlight")
+											$(this).text() === 'Add Highlight'
+											? $(this).text('Remove Highlight')
+											: $(this).text('Add Highlight')	
+											})
+										</script>	
+									</code>
+								</pre>
+							</div>
+							<div style="max-width: 60%; height: auto;">
+								<h5 style="color: #61dafb; font-size: 20px;">Declarative:</h5>
+								<pre style="font-size: 12px;">
+									<code data-trim data-noescape>
+										<script type="text/template">
+											<Btn 
+												onToggleHighlight={this.handleToggleHighlight} 
+												highlight={this.state.highlight}>
+												{this.state.buttonText}
+											</Btn>
+										</script>
+									</code>
+								</pre>
+							</div>
+						</div>	
+					</section>
+					<section>
+						<h3 style="color: #61dafb;">Component approach</h3>
+						<img src="images/component.png" alt="react component">
+						<p style="font-size: 25px; color: #ffffff;">React is based on components, this is another key feature of the library</p>	
+					</section>
+					<section>
+						<h3 style="color: #61dafb;">Example of a component approach in React</h3>
+						<div class="two_divs">
+							<div style="max-width: 40%; height: auto;">
+								<p style="font-size: 20px; color: #ffffff;">Let us have a website. On this site, we can highlight some blocks: header, content, sidebar, footer, and so on. Each block can be divided into smaller sub-blocks. For example, in a hedger, you can usually select a logo, menu, search, and so on.
+									<br>In React, each such block is called a component. Each component can contain smaller components, those in turn even smaller, and so on.</p>
+							</div>
+							<div style="max-width: 60%; height: auto;">
+								<h5 style="color: #61dafb; font-size: 14px;">Code example:</h5>
+								<pre style="font-size: 14px;">
+									<code data-trim data-noescape>
+										<script type="text/template">
+											class App extends Component {
+												render() {
+												  return (
+													<Header/>
+												   	<Content />
+													<Footer/>
+												  )
+												}
+											  }
+											  export default App;
+										</script>
+									</code>
+								</pre>
+							</div>
+						</div>		
+					</section>
+					<section>
+						<h3 style="color: #61dafb;">JSX</h3>
+						<p style="font-size: 25px; color: #ffffff;">JSX is an extension of JavaScript syntax that allows you to use HTML-like syntax to describe the structure of the interface.</p>
+						<h5 style="color: #61dafb; font-size: 20px;">An example of JSX:</h5>
+							<pre style="font-size: 25px;">
+								<code data-trim data-noescape>
+									<script type="text/template">
+										<MyButton color="blue" shadowSize={2}>
+											Click Me
+										</MyButton>
+									</script>
+								</code>
+							</pre>	
+					</section>
+					<section>
+						<h3 style="color: #61dafb;">Virtual DOM </h3>
+						<img src="images/virtualdom.jpg" alt="react component" style="width: 700px;">
+						<p style="font-size: 25px; color: #ffffff;">Instead of interacting with the DOM directly, we work with its lightweight copy. We can make changes to the copy based on our needs, and then apply the changes to the real DOM.</p>	
+					</section>
+				</section>
+				<section>
+					<h3 style="color: #61dafb;">Let's summarize</h3>
+						<ol>
+							<li class="fragment" data-fragment-index="1" style="font-size: 20px; color: #ffffff;">A component-oriented approach, the ability to easily change existing components and reuse code turns React development into a continuous improvement process.</li>
+							<li class="fragment" data-fragment-index="2" style="font-size: 20px; color: #ffffff;">Components that were created while working on a project have no additional dependencies. Thus, nothing prevents them from being used again and again in projects of various types. All previous experience can be easily applied when working on a new site or even when creating a mobile application.</li>
+							<li class="fragment" data-fragment-index="3" style="font-size: 20px; color: #ffffff;">The ability to easily reuse existing code increases the speed of development, simplifies the testing process, and, as a result, reduces costs.</li>
+							<li class="fragment" data-fragment-index="4" style="font-size: 20px; color: #ffffff;">Using advanced capabilities such as Virtual DOM or isomorphic JavaScript, React developers can create high-performance applications at high speed, despite their level of complexity.</li>
+							<li class="fragment" data-fragment-index="5" style="font-size: 20px; color: #ffffff;">The fact that this library is being developed and supported by highly qualified developers and is gaining popularity every year gives reason to hope that the trend towards further improvements will continue.</li>
+						</ol>
+						<img src="images/plastic-surgery-beauty.gif" alt="react logo" width="180px" class="fragment" data-fragment-index="1">
+				</section>
+				<section>
+					<h3 style="color: #61dafb;">The end</h3>
+					<img src="images/coding.gif" alt="react component" style="width: 500px;">
+					<p style="font-size: 25px; color: #ffffff;">Thank you for your attention!</p>
+
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/reveal.js-menu/menu.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				slideNumber: 'c/t',
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu ]
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,27 @@
+.logo-react{
+    animation: spin 5s linear 0s infinite;
+  }
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+.two_divs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.two_divs_ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.list_react{
+    margin-top: 50px;
+    color: #61dafb;
+}
+.company_react{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+}
